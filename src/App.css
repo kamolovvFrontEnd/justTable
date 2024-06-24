@@ -1,0 +1,73 @@
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.add-form label {
+  margin-bottom: 10px;
+}
+
+.add-form input {
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-form button:disabled {
+  background-color: #ccc;
+}
+
+.add-form .error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-submit {
+  width: 200px;
+  padding-inline: 0.5rem;
+  padding-block: 0.3rem;
+  font-size: 1rem;
+  background-color: inherit;
+  border: 2px solid green;
+  cursor: pointer;
+}
+.btn-add-form {
+  width: 200px;
+  padding-inline: 0.5rem;
+  padding-block: 0.3rem;
+  font-size: 1rem;
+  background-color: inherit;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.btn-add-form:disabled {
+  border: none;
+  color: black;
+  cursor: not-allowed;
+}
